@@ -1,0 +1,12 @@
+{
+    "ID":"22d5608f-22b7-4d3b-88f7-d9f37482a019",
+    "ActionKeyword":"ping",
+    "Name":"ping",
+    "Description":"ping target domain or ip",
+    "Author":"Weilet Sun",
+    "Version":"0.0.0",
+    "Language":"python",
+    "Website":"https://L3away.cn",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image/icon.png"
+}
