@@ -1,0 +1,12 @@
+{
+    "ID":"976f8793-7ee1-41fd-bc50-5b245a402a1b",
+    "ActionKeyword":"b4",
+    "Name":"Base64Decoder",
+    "Description":"Decode base64 string",
+    "Author":"Weilet Sun",
+    "Version":"0.0.0",
+    "Language":"python",
+    "Website":"https://L3away.cn",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image\\icon.png"
+}
