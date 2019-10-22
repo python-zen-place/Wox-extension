@@ -1,4 +1,3 @@
-import re
 import os
 from wox import Wox
 
