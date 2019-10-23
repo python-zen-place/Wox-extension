@@ -4,7 +4,6 @@ from wox import Wox, WoxAPI
 from dns import dns
 from multiprocessing import Pool
 
-
 def ping(server):
     with os.popen('ping {} -4 -w 3000'.format(server)) as res:
         data = res.read()
@@ -32,7 +31,7 @@ def list_factory(dns, JsonRPCActionMethod=None):
     if JsonRPCActionMethod:
         for result in results:
             result['JsonRPCAction'] = {
-                'method': Json,
+                'method': JsonRPCActionMethod,
                 'parameters': [result['SubTitle']],
                 'dontHideAfterAction': True
             }
@@ -77,7 +76,6 @@ class DNS(Wox):
 
     def remove(self, server):
         WoxAPI.change_query('dns remove ' + server + '#')
-
 
 if __name__ == '__main__':
     DNS()
