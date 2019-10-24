@@ -3,23 +3,24 @@ import re
 from wox import Wox, WoxAPI
 from dns import dns
 from multiprocessing import Pool
+from ping import ping
 
-def ping(server):
-    with os.popen('ping {} -4 -w 3000'.format(server)) as res:
-        data = res.read()
-        if 'ms' not in data:
-            return {
-                'Title': server,
-                'SubTitle': '超时',
-                'IcoPath': 'image/icon.png'
-            }
-        else:
-            time = data.split('=')[-1]
-            return {
-                'Title': server,
-                'SubTitle': time.strip(),
-                'IcoPath': 'image/icon.png'
-            }
+
+def run_ping(server):
+    data = ping(server)
+    if 'ms' not in data:
+        return {
+            'Title': server,
+            'SubTitle': '超时',
+            'IcoPath': 'image/icon.png'
+        }
+    else:
+        time = data.split('=')[-1]
+        return {
+            'Title': server,
+            'SubTitle': time.strip(),
+            'IcoPath': 'image/icon.png'
+        }
 
 
 def list_factory(dns, JsonRPCActionMethod=None):
@@ -43,8 +44,8 @@ class DNS(Wox):
         if query == 'list':
             return list_factory(dns, 'test')
         elif query == 'all':
-            p = Pool(20)
-            tasks = [p.apply_async(ping, args=(server,)) for server in dns]
+            p = Pool(os.cpu_count())
+            tasks = [p.apply_async(run_ping, args=(server,)) for server in dns]
             p.close()
             p.join()
             return sorted([res.get() for res in tasks],
@@ -76,6 +77,7 @@ class DNS(Wox):
 
     def remove(self, server):
         WoxAPI.change_query('dns remove ' + server + '#')
+
 
 if __name__ == '__main__':
     DNS()
