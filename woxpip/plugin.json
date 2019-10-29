@@ -1,8 +1,8 @@
 {
-    "ID":"976f8793-7ee1-41fd-bc50-5b245a402a1b",
-    "ActionKeyword":"b4",
-    "Name":"Base64Decoder",
-    "Description":"Decode base64 string",
+    "ID":"ce043b1c-4e78-4bd2-baa8-8846431a7e31",
+    "ActionKeyword":"pip",
+    "Name":"wox pip",
+    "Description":"In wox we use pip",
     "Author":"Weilet Sun",
     "Version":"0.0.0",
     "Language":"python",
