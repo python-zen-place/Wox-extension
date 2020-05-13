@@ -1,0 +1,12 @@
+{
+    "ID":"42fd2bff-128a-448d-a437-0264377da3d4",
+    "ActionKeyword":"ip",
+    "Name":"IPIP",
+    "Description":"fetch real-world address from ipip.com",
+    "Author":"Weilet Sun",
+    "Version":"1.0",
+    "Language":"python",
+    "Website":"https://Weilet.me",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image\\icon.png"
+}

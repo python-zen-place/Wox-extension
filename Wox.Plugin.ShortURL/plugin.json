@@ -1,0 +1,12 @@
+{
+    "ID":"76dd8b71-06e6-4c21-ab14-84725f34ceb2",
+    "ActionKeyword":"short",
+    "Name":"ShortURL",
+    "Description":"Shorten URL",
+    "Author":"Weilet Sun",
+    "Version":"1.0.0",
+    "Language":"python",
+    "Website":"https://Weilet.me",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image\\icon.png"
+}

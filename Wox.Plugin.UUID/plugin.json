@@ -1,0 +1,12 @@
+{
+    "ID":"426d2bff-128a-448d-a437-0264377da3d4",
+    "ActionKeyword":"uuid",
+    "Name":"UUID",
+    "Description":"generate uuid",
+    "Author":"Weilet Sun",
+    "Version":"1.0",
+    "Language":"python",
+    "Website":"https://Weilet.me",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image\\icon.png"
+}
