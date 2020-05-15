@@ -6,7 +6,9 @@ from wox import Wox, WoxAPI
 
 class ShortURL(Wox):
     def query(self, query):
-        API = 'https://api.uomg.com/api/long2dwz?dwzapi=tcn&url=https://'
+        API = 'https://api.uomg.com/api/long2dwz?dwzapi=suoim&url=https://'
+        if query.startswith('https://'):
+            query = query.split('https://')[1] 
         URL = f'{API}{query}'
         data = json.loads(requests.get(URL).text)
         if 'ae_url' in data.keys():
