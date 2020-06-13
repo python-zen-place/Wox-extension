@@ -7,7 +7,7 @@ class UUID(Wox):
     def query(self, query):
         data = str(uuid.uuid4())
         result = [{
-            'Title': 'IPIP',
+            'Title': 'UUID',
             'SubTitle': data,
             'IcoPath': 'image/icon.png',
             "JsonRPCAction":{
