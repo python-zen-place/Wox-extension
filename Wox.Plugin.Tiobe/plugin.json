@@ -1,0 +1,12 @@
+{
+    "ID":"775d5a88-3c8b-4259-acb5-d8924af2cc49",
+    "ActionKeyword":"tiobe",
+    "Name":"tiobe",
+    "Description":"Get tiobe language ranking list",
+    "Author":"Weilet Sun",
+    "Version":"1.0",
+    "Language":"python",
+    "Website":"https://Weilet.me",
+    "ExecuteFileName":"main.py",
+    "IcoPath":"image\\icon.ico"
+}
