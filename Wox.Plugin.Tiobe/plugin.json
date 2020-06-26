@@ -8,5 +8,6 @@
     "Language":"python",
     "Website":"https://Weilet.me",
     "ExecuteFileName":"main.py",
-    "IcoPath":"image\\icon.ico"
+    "IcoPath":"image\\icon.ico",
+    "KeepResultRawScore": true
 }
